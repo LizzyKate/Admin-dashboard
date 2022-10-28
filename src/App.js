@@ -22,9 +22,10 @@ import {
   Editor,
 } from "./pages";
 import "./App.css";
+import { useGlobalContext } from "./context/ContextProvider";
 
 function App() {
-  const activeMenu = true;
+  const {activeMenu} = useGlobalContext(); 
   return (
     <div>
       <BrowserRouter>
